@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="noobcorner">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="utf-8">
+    <title>Noobcorner</title>
+
+    <!-- jquery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- angularJS -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+
+    <!-- own styles -->
+    <link rel="stylesheet" href="style/main.css"/>
+
+    <!-- own scripts -->
+    <script src="main.js"></script>
+    <script src="controller/home.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  </head>
+  <body ng-controller="MainCtrl">
+
+
+    <div ng-view></div>
+
+  </body>
+</html>
