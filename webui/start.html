@@ -2,6 +2,7 @@
 <html ng-app="noobcorner">
   <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Noobcorner</title>
 
     <!-- jquery -->
@@ -30,8 +31,14 @@
   </head>
   <body ng-controller="MainCtrl">
 
+    <div class="myNavbar">
+      <ul class="myNavbar-nav">
+        <li><a>Link </a></li>
+        <li><a>Link</a></li>
+      </ul>
+    </div>
 
-    <div ng-view></div>
+    <div ng-view style="height:2000px"></div>
 
   </body>
 </html>
