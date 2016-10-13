@@ -7,11 +7,21 @@ var rootView = path.join(__dirname + '/webui/')
 app.use(express.static(path.join(__dirname + '/webui/')));
 
 app.get('/', function(req, res){
-  res.sendFile("login.html", {root: rootView});
+  res.redirect("/fcc");
+
 });
 
-app.get('/home', function(req, res){
-  res.sendFile("start.html", {root: rootView});
+app.get('/fcc', function(req, res){
+    res.sendFile("start.html", {root: rootView});
 })
 
+// app.get('/home', function(req, res){
+//   res.sendFile("start.html", {root: rootView});
+// })
+
 app.listen(61003);
+console.log("Noobcorner.me is now running locally:");
+console.log("---------------------");
+console.log("Host: localhost");
+console.log("Port: 61003");
+console.log("---------------------");
