@@ -7,6 +7,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <title>Noobcorner</title>
 
+    <link rel="apple-touch-icon" href="img/fcc.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="ios/AppIcon.appiconset/Icon-60@3x.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="ios/AppIcon.appiconset/Icon-76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="ios/AppIcon.appiconset/Icon-76@2x.png" />
+    <link rel="apple-touch-icon" sizes="58x58" href="ios/AppIcon.appiconset/Icon-Small@2x.png" />
+
     <!-- jquery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -22,6 +28,7 @@
 
     <!-- own styles -->
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/navbarMobile.css"/>
 
     <!-- own scripts -->
     <script src="main.js"></script>
@@ -33,7 +40,7 @@
   </head>
   <body ng-controller="MainCtrl">
 
-    <div class="myNavbar">
+    <div class="hidden-xs myNavbar">
       <ul class="myNavbar-nav">
         <li><a>Neuigkeiten</a></li>
         <li><a>Team</a></li>
@@ -42,6 +49,21 @@
       <span>
         <img class="myBrand" src="img/fcc.png"></img>
       </span>
+    </div>
+
+    <div class="hidden-sm hidden-lg myNavbarMobile">
+      <div class="navItemsLeft">
+        <div class="navItem"><i class="glyphicon glyphicon-globe"></i></div>
+        <div class="navItem">
+          <i class="glyphicon glyphicon-user"></i>
+          <i class="glyphicon glyphicon-user"></i>
+        </div>
+      </div>
+      <div class="navLogo"><img ng-click="toggleNavBar()" src="img/fcc.png"></img></div>
+      <div class="navItemsRight">
+        <div class="navItem"><i class="glyphicon glyphicon-th-list"></i></div>
+        <div class="navItem"><i class="glyphicon glyphicon-flash"></i></div>
+      </div>
     </div>
 
     <div ng-view style="height:2000px"></div>

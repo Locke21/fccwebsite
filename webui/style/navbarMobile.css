@@ -1,0 +1,80 @@
+.myNavbarMobile{
+  position: fixed;
+bottom: 0px;
+height: 100px;
+/* background-color: white; */
+color: #bdc3c7;
+width: 100%;
+background-color: transparent;
+}
+
+.myNavbarMobile > .navItemsLeft{
+  float: left;
+display: inline-block;
+width: 42.5%;
+line-height: 3.5;
+height: 50%;
+position: absolute;
+bottom: 0;
+background-color: white;
+border-radius: 0px 10px 0px 0px;
+transition: all 0.4s ease;
+}
+
+.myNavbarMobile > .navItemsRight{
+  float: right;
+  line-height: 3.5;
+display: inline-block;
+width: 42.5%;
+height: 50%;
+position: absolute;
+right: 0;
+background-color: white;
+bottom: 0;
+border-radius: 10px 0px 0px 0px;
+
+transition: all 0.4s ease;
+}
+
+.navItemsRight.shrink,
+.navItemsLeft.shrink{
+  height: 0%;
+}
+
+
+
+.myNavbarMobile > .navItemsLeft > .navItem,
+.myNavbarMobile > .navItemsRight > .navItem
+{
+  width: 45%;
+  margin-left: 5px;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+
+.myNavbarMobile > .navItemsLeft > .navItemHover,
+.myNavbarMobile > .navItemsRight > .navItemHover{
+  background-color: red;
+}
+
+.navLogo{
+  width: 15%;
+height: 100%;
+/* display: inline-block; */
+position: absolute;
+left: 42.5%;
+background-color: transparent;
+transition: all 0.2 ease;
+}
+
+.navLogo.shrink{
+  opacity: 0.2;
+  position:fixed;
+  left:0;
+
+}
+
+.navLogo > img{
+  width: 100%;
+}

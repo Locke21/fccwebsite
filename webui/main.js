@@ -12,15 +12,30 @@ noobcorner.config(function($routeProvider, $locationProvider){
 });
 
 noobcorner.controller('MainCtrl', function($scope){
+
+  $scope.toggleNavBar = function(){
+    $('.navItemsRight').removeClass('shrink');
+    $('.navItemsLeft').removeClass('shrink');
+    $('.navLogo').removeClass('shrink');
+  }
+
   $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('.myNavbar').addClass('shrink');
     $('.myNavbar-nav').addClass('shrink');
     $('.myBrand').addClass('shrink');
+
+    $('.navItemsRight').addClass('shrink');
+    $('.navItemsLeft').addClass('shrink');
+    $('.navLogo').addClass('shrink');
   } else {
     $('.myNavbar').removeClass('shrink');
     $('.myNavbar-nav').removeClass('shrink');
     $('.myBrand').removeClass('shrink');
+
+    $('.navItemsRight').removeClass('shrink');
+    $('.navItemsLeft').removeClass('shrink');
+    $('.navLogo').removeClass('shrink');
   }
 });
 });

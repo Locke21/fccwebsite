@@ -4,7 +4,6 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 100px;
   color: #2c3e50;
   background-color: #ecf0f1;
 }
@@ -136,5 +135,11 @@ body{
 
     visibility: hidden;
 
+  }
+}
+
+@media only screen and ( max-width: 768px){
+  body{
+    border-top: 20px solid #8d191b;
   }
 }
