@@ -78,3 +78,16 @@ transition: all 0.2 ease;
 .navLogo > img{
   width: 100%;
 }
+
+
+@media screen and (max-width:320px) {
+  .myNavbarMobile > .navItemsLeft > .navItem,
+  .myNavbarMobile > .navItemsRight > .navItem
+  {
+    width: 40%;
+    margin-left: 8px;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+  }
+}
