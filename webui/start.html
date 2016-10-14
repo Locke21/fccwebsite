@@ -13,6 +13,9 @@
     <link rel="apple-touch-icon" sizes="152x152" href="ios/AppIcon.appiconset/Icon-76@2x.png" />
     <link rel="apple-touch-icon" sizes="58x58" href="ios/AppIcon.appiconset/Icon-Small@2x.png" />
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+
     <!-- jquery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
@@ -42,9 +45,9 @@
 
     <div class="hidden-xs hidden-sm myNavbar">
       <ul class="myNavbar-nav">
-        <li><a>Neuigkeiten</a></li>
-        <li><a>Team</a></li>
-        <li><a>Tabelle</a></li>
+        <li><i ng-if="!shrink" class="glyphicon glyphicon-globe"></i><a>Neuigkeiten</a></li>
+        <li><i ng-if="!shrink" class="glyphicon glyphicon-user"></i><a>Team</a></li>
+        <li><i ng-if="!shrink" class="glyphicon glyphicon-th-list"></i><a>Tabelle</a></li>
       </ul>
       <span>
         <img class="myBrand" src="img/fcc.png"></img>
