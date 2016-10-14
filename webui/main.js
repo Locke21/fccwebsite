@@ -6,7 +6,7 @@ noobcorner.config(function($routeProvider, $locationProvider){
       templateUrl: 'tpls/home.html',
       controller: 'HomeCtrl'
     })
-    .when('/welcome', {
+    .when('/news', {
       templateUrl: 'tpls/test.html'
     });
 });
