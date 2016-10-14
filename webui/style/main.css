@@ -163,7 +163,7 @@ body{
 
 @media only screen and ( max-width: 768px){
   body{
-    margin-top: 0px;
+    margin-top: 20px;
   }
   .fixedTopLane{
     height: 20px;

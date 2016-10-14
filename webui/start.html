@@ -2,7 +2,7 @@
 <html ng-app="noobcorner">
   <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
@@ -19,6 +19,9 @@
 
     <!-- jquery -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- dragend http://stereobit.github.io/dragend/ -->
+    <script src="libs/dragend.min.js"></script>
 
     <!-- angularJS -->
     <script src="bower_components/angular/angular.min.js"></script>
@@ -59,7 +62,7 @@
     <div class=" hidden-lg myNavbarMobile">
       <div class="fixedTopLane"></div>
       <div class="navItemsLeft">
-        <div class="navItem"><i class="glyphicon glyphicon-globe"></i></div>
+        <div class="navItem"><i href="#news" class="glyphicon glyphicon-globe"></i></div>
         <div class="navItem">
           <i class="glyphicon glyphicon-user"></i>
           <i class="glyphicon glyphicon-user"></i>
@@ -72,7 +75,7 @@
       </div>
     </div>
 
-    <div ng-view style="height:2000px;"></div>
+    <div ng-view></div>
 
   </body>
 </html>

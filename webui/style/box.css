@@ -1,5 +1,6 @@
+
 .ContentBox{
-  height: 200px;
+  height: 200px !important;
   background-color: white;
   margin-top: 60px;
   padding-left: 0px;
