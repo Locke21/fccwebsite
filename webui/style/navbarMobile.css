@@ -8,6 +8,7 @@ color: #bdc3c7;
 width: 100%;
 background-color: transparent;
 z-index: 9999;
+
 }
 
 .myNavbarMobile > .navItemsLeft{
@@ -21,6 +22,7 @@ bottom: 0;
 background-color: white;
 border-radius: 0px 10px 0px 0px;
 transition: all 0.4s ease;
+box-shadow: 0px 0px 10px 0px grey;
 }
 
 .myNavbarMobile > .navItemsRight{
@@ -34,6 +36,7 @@ right: 0;
 background-color: white;
 bottom: 0;
 border-radius: 10px 0px 0px 0px;
+box-shadow: 0px 0px 10px 0px grey;
 
 transition: all 0.4s ease;
 }
