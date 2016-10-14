@@ -68,3 +68,13 @@
     left: calc( 50% - 45px);
     width: 90px;
 }
+
+@media only screen and (max-width:768px){
+  .ContentBox{
+    border-radius: 0px;
+  }
+
+  .ContentBox > .BoxHeader{
+    border-radius: 0px;
+  }
+}

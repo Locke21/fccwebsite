@@ -163,7 +163,15 @@ body{
 
 @media only screen and ( max-width: 768px){
   body{
-    border-top: 20px solid #8d191b;
     margin-top: 0px;
+  }
+  .fixedTopLane{
+    height: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 9999;
+    background-color: #8d191b;
   }
 }
