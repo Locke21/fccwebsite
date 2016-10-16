@@ -1,0 +1,23 @@
+{
+  "name": "noobcorner",
+  "version": "1.0.0",
+  "description": "just some ideas hosted on uberspace!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Locke21/noobcorner.git"
+  },
+  "keywords": [],
+  "author": "Locke21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Locke21/noobcorner/issues"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
