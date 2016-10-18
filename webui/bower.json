@@ -1,0 +1,14 @@
+{
+  "name": "noobcorner",
+  "homepage": "http://www.noobcorner.me/",
+  "authors": [
+    "Fabi <fabian.hilz@t-online.de>"
+  ],
+  "description": "just some ideas hosted on uberspace!",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
