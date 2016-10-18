@@ -11,6 +11,14 @@ app.get('/', function(req, res){
 
 });
 
+app.get('/mockdata', function(req, res){
+  res.format({
+    'application/json': function(){
+      res.sendFile(path.join(__dirname+"/mockdata.json"));
+    }
+  })
+})
+
 app.get('/fcc', function(req, res){
     res.sendFile("start.html", {root: rootView});
 })

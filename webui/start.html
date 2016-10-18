@@ -3,7 +3,6 @@
   <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <title>Noobcorner</title>
@@ -22,6 +21,9 @@
 
     <!-- dragend http://stereobit.github.io/dragend/ -->
     <script src="libs/dragend.min.js"></script>
+
+    <!-- sticky http://leafo.net/sticky-kit/ -->
+    <script src="libs/sticky-kit.min.js"></script>
 
     <!-- angularJS -->
     <script src="bower_components/angular/angular.min.js"></script>
@@ -47,6 +49,7 @@
 
   </head>
   <body ng-controller="MainCtrl">
+
 
     <div class="hidden-xs hidden-sm myNavbar">
       <ul class="myNavbar-nav">
@@ -75,7 +78,7 @@
       </div>
     </div>
 
-    <div ng-view></div>
+    <div class="Wrapper" ng-view></div>
 
   </body>
 </html>

@@ -1,5 +1,29 @@
 noobcorner.controller('HomeCtrl',function($scope, $compile){
+
+  $scope.fetchMockData = function(){
+    $.get( "/mockdata", function( data ) {
+      $scope.mockdata = data;
+      if($(window).width() < 768){
+        $('#testStick').stick_in_parent({
+          offset_top:20
+        });
+      }
+
+    });
+  };
+
+  $scope.fetchMockData();
+
+  $scope.testClick = function(index){
+    alert(index);
+  }
+
+  $scope.toggleDetails = function(){
+    $('#NewsDetail').toggle("collapse");
+    $('#stickerTest').css("border-radius", 0);
+  }
   if($(window).width() < 768){
+
     $('#demo').dragend();
     var oBoxes = $('.ContentBox');
     var oFirstBox = oBoxes[0];
@@ -13,6 +37,11 @@ noobcorner.controller('HomeCtrl',function($scope, $compile){
       alert("test");
     });
     $compile(oFirstBox)($scope);
+
+
+
+
+
   }
 
 

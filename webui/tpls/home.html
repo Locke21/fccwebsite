@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div id="demo">
-    <div class="dragend-page col-md-5 ContentBox">
+    <div class="dragend-page col-md-5 ContentBox DragendBox">
       <div class="BoxHeader">
         Unser letztes Spiel
       </div>
@@ -21,12 +21,22 @@
       </div>
 
     </div>
-    <div class="dragend-page col-md-5 col-md-offset-2 ContentBox">
+    <div class="dragend-page col-md-5 col-md-offset-2 ContentBox DragendBox">
       <div class="BoxHeader">
-        TestTile
+        Unser nächstes Spiel
       </div>
       <div class="BoxBody">
-        Welcome
+        <div class="GameStats">
+          <div class="HomeTeam">
+            <img src="/img/fcc.png"/>
+            FC Chambalaya
+          </div>
+          <div class="GameResult"> 1:1</div>
+          <div class="GuestTeam">
+            <img src="/img/fcc.png"/>
+            FC Chambalaya
+          </div>
+        </div>
       </div>
 
     </div>
@@ -34,12 +44,25 @@
 </div>
 
   <div class="row">
-    <div class="col-md-12 ContentBox">
-      <div class="BoxHeader">
-        TestTile
+    <div class="col-md-12 ContentBox NewsBox">
+      <div id="testStick" class="BoxHeader">
+        Meldungen
+        <span style="float: right;">{{mockdata.length}}</span>
       </div>
       <div class="BoxBody">
-        Welcome
+        <div ng-repeat="x in mockdata" class="News" ng-click="testClick($index)">
+          <div class="NewsIcon"><i class="glyphicon glyphicon-{{x.icon}}"></i></div>
+          <div class="NewsContent">
+            <div class="NewsTitle">{{x.title}}</div>
+            <div class="NewsSubTitle">{{x.subtitle}}</div>
+          </div>
+        </div>
+
+
+
+
+
+
       </div>
     </div>
 

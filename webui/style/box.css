@@ -1,11 +1,14 @@
 
 .ContentBox{
-  height: 200px !important;
   background-color: white;
   margin-top: 60px;
   padding-left: 0px;
   padding-right: 0px;
   border-radius: 5px 5px 0px 0px;
+}
+
+.DragendBox{
+  height: 200px !important;
 }
 
 .ContentBox > .BoxHeader{
@@ -70,10 +73,67 @@
     width: 90px;
 }
 
+.NewsBox{
+  height: inherit;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.NewsBox > .BoxHeader{
+  height: 40px;
+}
+
+.ContentBox > .BoxBody > .News{
+
+  width: 100%;
+  overflow: auto;
+  padding: 15px;
+  padding-left: 0px;
+  margin-top: 10px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.ContentBox > .BoxBody > .News > .NewsIcon{
+  width: 10%;
+  float: left;
+  display: inline;
+  text-align: center;
+  height: 100%;
+}
+.ContentBox > .BoxBody > .News > .NewsContent{
+  width: 90%;
+  float: right;
+  display: inline;
+}
+
+.ContentBox > .BoxBody > .News > .NewsContent > .NewsTitle{
+  height: 50%;
+  font-weight: bold;
+  font-size: large;
+  top: 0;
+}
+.ContentBox > .BoxBody > .News > .NewsContent > .NewsSubTitle{
+  height: 50%;
+
+}
+
+#testStick{
+  z-index: 9998;
+}
 @media only screen and (max-width:768px){
   .ContentBox{
     border-radius: 0px;
+    height: inherit;
   }
+
+
+
+
+  .ContentBox > .BoxBody > .News{
+    background-color: #ecf0f1;
+    overflow: auto;
+  }
+
 
   .ContentBox > .BoxHeader{
     border-radius: 0px;
