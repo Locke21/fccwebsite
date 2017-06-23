@@ -5,6 +5,7 @@
   padding-left: 0px;
   padding-right: 0px;
   border-radius: 5px 5px 0px 0px;
+  overflow: auto;
 }
 
 .DragendBox{
@@ -42,6 +43,7 @@
   text-align: center;
   font-weight: bold;
   font-size: larger;
+  line-height: 3;
 }
 
 .ContentBox > .BoxBody > .GameStats > .GameResult{
@@ -53,6 +55,11 @@
   text-align: center;
   font-size: xx-large;
 }
+.ContentBox > .BoxBody > .GameStats > .GameResult > span.time{
+  display: block;
+  font-size: initial;
+  color: rgb(148, 148, 148);
+}
 
 .ContentBox > .BoxBody > .GameStats > .GuestTeam{
   display: inline-block;
@@ -62,15 +69,24 @@
   font-weight: bold;
   font-size: larger;
   text-align: center;
+  line-height: 3;
 }
 
-.ContentBox > .BoxBody > .GameStats > .GuestTeam > img,
-.ContentBox > .BoxBody > .GameStats > .HomeTeam > img {
+.ContentBox > .BoxBody > .GameStats > .GuestTeam > div > img,
+.ContentBox > .BoxBody > .GameStats > .HomeTeam > div > img {
     position: relative;
     display: block;
     margin-bottom: 5px;
     left: calc( 50% - 45px);
-    width: 90px;
+    height: 100px;
+}
+
+.ContentBox > .BoxBody > .GameStats > .GuestTeam > div.iconWrapper,
+.ContentBox > .BoxBody > .GameStats > .HomeTeam > div.iconWrapper{
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top:0;
 }
 
 .NewsBox{
@@ -82,7 +98,7 @@
   height: 40px;
 }
 
-.ContentBox > .BoxBody > .News{
+.News{
 
   width: 100%;
   overflow: auto;
@@ -93,28 +109,28 @@
   border-radius: 10px;
 }
 
-.ContentBox > .BoxBody > .News > .NewsIcon{
+.News > .NewsIcon{
   width: 10%;
   float: left;
   display: inline;
   text-align: center;
   height: 100%;
 }
-.ContentBox > .BoxBody > .News > .NewsContent{
+.News > .NewsContent{
   width: 90%;
   float: right;
   display: inline;
 }
 
-.ContentBox > .BoxBody > .News > .NewsContent > .NewsTitle{
+.News > .NewsContent > .NewsTitle{
   height: 50%;
   font-weight: bold;
   font-size: large;
   top: 0;
 }
-.ContentBox > .BoxBody > .News > .NewsContent > .NewsSubTitle{
+.News > .NewsContent > .NewsSubTitle{
   height: 50%;
-
+@
 }
 
 #testStick{
@@ -126,12 +142,33 @@
     height: inherit;
   }
 
+  .tileIndicator{
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    margin-top: 10px;
+  }
+
+  .tileIndicator > .indicatorDot{
+    height: 8px;
+    display: inline-block;
+    width: 8px;
+    border-radius: 4px;
+    background-color: #8d191b;
+    opacity: .3;
+  }
+
+  .tileIndicator > .indicatorDot.active{
+    opacity: 1;
+  }
 
 
-
-  .ContentBox > .BoxBody > .News{
+  .News{
     background-color: #ecf0f1;
     overflow: auto;
+    -webkit-transition: all 2s; /* Safari */
+    transition: all .1s;
+    display: block;
   }
 
 

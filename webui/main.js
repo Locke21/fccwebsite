@@ -13,7 +13,7 @@ noobcorner.config(function($routeProvider, $locationProvider){
 });
 
 noobcorner.controller('MainCtrl', function($scope){
-  
+
   $scope.shrink = false;
 
   $scope.toggleNavBar = function(){
